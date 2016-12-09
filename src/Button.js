@@ -1,8 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-
-export default class Button extends React.Component {
+ export default class Button extends Radium(Component) {
   static propTypes = {
     kind: React.propTypes.oneOf(['primary', 'warning']).isRequired
   };
@@ -25,5 +24,3 @@ export default class Button extends React.Component {
     );
   }
 }
-
-Button = Radium(Button);
